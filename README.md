@@ -1,0 +1,2 @@
+# TravelPlans
+Static pages
