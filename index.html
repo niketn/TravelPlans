@@ -1,119 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Matheran + Tapola Road Trip | 23–27 Nov 2026</title>
 <style>
-:root{--ink:#17332d;--green:#246b54;--mint:#eaf5ef;--cream:#fffaf1;--line:#dce8df;--orange:#e98c43}
-*{box-sizing:border-box}body{margin:0;background:#f4f7f3;color:#263a34;font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
-.hero{padding:54px 20px;background:linear-gradient(135deg,#174b3d,#39846a);color:#fff;text-align:center}
-.hero .tag{display:inline-block;border:1px solid #ffffff80;border-radius:99px;padding:5px 13px;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
-h1{font-size:clamp(30px,5vw,48px);line-height:1.12;margin:18px 0 12px} .hero p{margin:0 auto;max-width:720px;color:#e3f4e9}
-.wrap{max-width:1050px;margin:auto;padding:24px 16px 60px}
-.actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:18px 0 30px}
-button,.btn{border:0;border-radius:10px;padding:11px 16px;font-weight:650;cursor:pointer;background:var(--green);color:white}
-.btn.secondary,button.secondary{background:#fff;color:var(--green);border:1px solid var(--line)}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
-.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 5px 18px #17332d08}
-.metric{font-size:25px;font-weight:800;color:var(--green);line-height:1.2}.small{font-size:13px;color:#66776f}
-h2{font-size:25px;margin:34px 0 14px;color:var(--ink)}h3{margin:0 0 8px;color:var(--green)}
-.day{display:grid;grid-template-columns:120px 1fr;gap:18px;margin:14px 0}
-.date{background:var(--mint);border-radius:13px;padding:15px;text-align:center;color:var(--green);font-weight:750;align-self:start}
-.date span{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.08em}
-.daybody{background:white;border:1px solid var(--line);border-radius:14px;padding:18px}
-ul{padding-left:20px;margin:8px 0}li{margin:5px 0}
-.note{background:#fff4e8;border-left:4px solid var(--orange);padding:13px 15px;border-radius:8px;margin:14px 0}
-table{width:100%;border-collapse:collapse;background:white;border-radius:12px;overflow:hidden}th,td{text-align:left;padding:12px;border-bottom:1px solid var(--line)}th{background:var(--mint);color:var(--green)}
-.checklist label{display:block;padding:7px 0}.checklist input{margin-right:9px;accent-color:var(--green)}
-footer{text-align:center;color:#718079;font-size:13px;padding:25px}
-@media(max-width:600px){.day{grid-template-columns:1fr;gap:8px}.date{text-align:left}.date span{display:inline;margin-right:8px}th,td{padding:9px;font-size:14px}}
-@media print{body{background:#fff}.hero{background:#246b54!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}.actions{display:none}.wrap{max-width:none;padding:0}.card,.daybody{box-shadow:none;break-inside:avoid}}
+:root{--ink:#17332d;--green:#246b54;--mint:#eaf5ef;--line:#dce8df;--orange:#e98c43}*{box-sizing:border-box}body{margin:0;background:#f4f7f3;color:#263a34;font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}.hero{padding:54px 20px;background:linear-gradient(135deg,#174b3d,#39846a);color:#fff;text-align:center}.hero .tag{display:inline-block;border:1px solid #ffffff80;border-radius:99px;padding:5px 13px;font-size:13px;letter-spacing:.08em;text-transform:uppercase}h1{font-size:clamp(30px,5vw,48px);line-height:1.12;margin:18px 0 12px}.hero p{margin:0 auto;max-width:720px;color:#e3f4e9}.wrap{max-width:1050px;margin:auto;padding:24px 16px 60px}.actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:18px 0 30px}button{border:0;border-radius:10px;padding:11px 16px;font-weight:650;cursor:pointer;background:var(--green);color:white}button.secondary{background:#fff;color:var(--green);border:1px solid var(--line)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 5px 18px #17332d08}.metric{font-size:25px;font-weight:800;color:var(--green);line-height:1.2}.small{font-size:13px;color:#66776f}h2{font-size:25px;margin:34px 0 14px;color:var(--ink)}h3{margin:0 0 8px;color:var(--green)}.day{display:grid;grid-template-columns:120px 1fr;gap:18px;margin:14px 0}.date{background:var(--mint);border-radius:13px;padding:15px;text-align:center;color:var(--green);font-weight:750;align-self:start}.date span{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.08em}.daybody{background:white;border:1px solid var(--line);border-radius:14px;padding:18px}ul{padding-left:20px;margin:8px 0}li{margin:5px 0}.note{background:#fff4e8;border-left:4px solid var(--orange);padding:13px 15px;border-radius:8px;margin:14px 0}table{width:100%;border-collapse:collapse;background:white;border-radius:12px;overflow:hidden}th,td{text-align:left;padding:12px;border-bottom:1px solid var(--line)}th{background:var(--mint);color:var(--green)}.checklist label{display:block;padding:7px 0}.checklist input{margin-right:9px;accent-color:var(--green)}footer{text-align:center;color:#718079;font-size:13px;padding:25px}a{color:var(--green);font-weight:650}.map-frame{width:100%;height:390px;border:0;border-radius:14px;background:#e8eee9}@media(max-width:600px){.day{grid-template-columns:1fr;gap:8px}.date{text-align:left}.date span{display:inline;margin-right:8px}th,td{padding:9px;font-size:14px}.map-frame{height:320px}}@media print{body{background:#fff}.hero{background:#246b54!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}.actions{display:none}.wrap{max-width:none;padding:0}.card,.daybody{box-shadow:none;break-inside:avoid}.map-frame{height:300px}}
 </style>
 </head>
 <body>
-<header class="hero">
- <span class="tag">Friends’ road trip · Maharashtra</span>
- <h1>Matheran + Tapola</h1>
- <p>5 days · 4 nights · 23–27 November 2026<br>Goa → Matheran → Tapola → Goa</p>
-</header>
+<header class="hero"><span class="tag">Friends’ road trip · Maharashtra</span><h1>Matheran + Tapola</h1><p>5 days · 4 nights · 23–27 November 2026<br>Goa → Matheran → Tapola → Goa</p></header>
 <main class="wrap">
- <div class="actions"><button onclick="window.print()">Print / Save as PDF</button><button class="secondary" onclick="copyPlan()">Copy itinerary summary</button></div>
- <section class="grid">
-  <div class="card"><div class="small">TRIP DATES</div><div class="metric">23–27 Nov</div><div>Monday–Friday · 2026</div></div>
-  <div class="card"><div class="small">STAY SPLIT</div><div class="metric">2 + 2 nights</div><div>Matheran (23–25) · Tapola (25–27)</div></div>
-  <div class="card"><div class="small">TRAVEL STYLE</div><div class="metric">Road trip</div><div>Own car / shared driving · scenic stops</div></div>
-  <div class="card"><div class="small">STAY PLAN</div><div class="metric">Book Matheran</div><div>Tapola stay via friend (confirm dates & facilities)</div></div>
- </section>
-
- <h2>Day-by-day itinerary</h2>
- <div class="day"><div class="date"><span>Mon</span>23 Nov</div><div class="daybody"><h3>Goa → Matheran | Check-in</h3>
-  <ul><li>Early departure from Goa; plan a full road-travel day with meal/fuel breaks.</li><li>Reach Dasturi Naka / parking area, park the car and transfer into Matheran (vehicles are not allowed in the town).</li><li>Check in, freshen up and take an easy walk around the market / nearby viewpoints if time permits.</li></ul>
-  <div class="note"><b>Stay night 1:</b> Matheran hotel. Prefer a property with a swimming pool if budget and availability work.</div>
- </div></div>
- <div class="day"><div class="date"><span>Tue</span>24 Nov</div><div class="daybody"><h3>Matheran | Full sightseeing day</h3>
-  <ul><li><b>Morning:</b> Panorama Point for sunrise (optional; early start), breakfast.</li><li><b>Day:</b> Charlotte Lake, Pisarnath Temple, Echo Point and Louisa Point; add Alexander Point depending on walking pace.</li><li><b>Evening:</b> market stroll / sunset at Porcupine Point if timing and weather suit.</li></ul>
-  <div class="note">Matheran is largely explored on foot. Wear comfortable shoes; carry water and keep some buffer between viewpoints.</div>
-  <b>Stay night 2:</b> Matheran.
- </div></div>
- <div class="day"><div class="date"><span>Wed</span>25 Nov</div><div class="daybody"><h3>Matheran → Tapola | Transfer day</h3>
-  <ul><li>Breakfast, checkout and leave Matheran in the morning.</li><li>Drive towards Tapola via the Mahabaleshwar side; allow roughly 5–6+ hours on the road, plus breaks and traffic.</li><li>Check in at the friend-arranged stay, relax and enjoy the backwater views around sunset if arrival allows.</li></ul>
-  <div class="note"><b>Stay night 1:</b> Tapola — confirm address, check-in time, bedding, hot water, parking and whether meals are available.</div>
- </div></div>
- <div class="day"><div class="date"><span>Thu</span>26 Nov</div><div class="daybody"><h3>Tapola | Backwaters & relaxed day</h3>
-  <ul><li>Enjoy a slow breakfast and the Shivsagar / Koyna backwater scenery.</li><li>Choose a local boat ride or kayaking only with an authorised operator and suitable weather/safety conditions.</li><li>Relax by the lake, take photos and enjoy sunset; optional BBQ/bonfire only if the host permits.</li></ul>
-  <b>Stay night 2:</b> Tapola.
- </div></div>
- <div class="day"><div class="date"><span>Fri</span>27 Nov</div><div class="daybody"><h3>Tapola → Goa | Return</h3>
-  <ul><li>Breakfast, checkout and start the return drive early.</li><li>Keep breaks for meals, fuel and driver rest; arrival in Goa will depend on traffic and stops.</li></ul>
-  <div class="note">Avoid fixing a late-night commitment in Goa on the return date.</div>
- </div></div>
-
- <h2>Stay planning & booking checklist</h2>
- <div class="grid">
-  <div class="card"><h3>Matheran · 23 & 24 Nov</h3><p>2 nights · shortlist a budget hotel with pool (pool availability/maintenance should be reconfirmed directly).</p>
-   <div class="checklist"><label><input type="checkbox">Compare total price for 2 nights + taxes</label><label><input type="checkbox">Confirm room capacity / extra mattress</label><label><input type="checkbox">Confirm pool access, timings & maintenance</label><label><input type="checkbox">Confirm parking at Dasturi Naka and luggage transfer</label><label><input type="checkbox">Check cancellation policy</label></div>
-  </div>
-  <div class="card"><h3>Tapola · 25 & 26 Nov</h3><p>2 nights · friend’s stay (free/low-cost, subject to confirmation).</p>
-   <div class="checklist"><label><input type="checkbox">Confirm availability for both nights</label><label><input type="checkbox">Get exact location / route pin</label><label><input type="checkbox">Confirm beds, bathrooms & hot water</label><label><input type="checkbox">Confirm meals / kitchen access</label><label><input type="checkbox">Confirm car parking & house rules</label></div>
-  </div>
- </div>
-
- <h2>Budget tracker (indicative)</h2>
- <p class="small">Illustrative group estimate for 3 people; actual spend depends on car mileage, rooms, food and activities. Tapola accommodation assumed free/low-cost.</p>
- <table><thead><tr><th>Expense</th><th>Group estimate</th><th>Per person (3)</th></tr></thead><tbody>
- <tr><td>Fuel + tolls (round trip)</td><td>₹10,000–14,000</td><td>₹3,300–4,700</td></tr>
- <tr><td>Matheran stay (2 nights)</td><td>₹6,000–12,000</td><td>₹2,000–4,000</td></tr>
- <tr><td>Food (5 days)</td><td>₹9,000–15,000</td><td>₹3,000–5,000</td></tr>
- <tr><td>Parking, local transfers & activities</td><td>₹4,000–7,000</td><td>₹1,300–2,300</td></tr>
- <tr><td>Tapola stay</td><td>Friend’s arrangement</td><td>Confirm</td></tr>
- <tr><th>Estimated total</th><th>₹29,000–48,000</th><th>₹9,700–16,000</th></tr>
- </tbody></table>
- <div class="note">Budget excludes shopping, major detours, premium activities and any Tapola accommodation contribution. Recalculate once room and vehicle details are final.</div>
-
- <h2>Before leaving</h2>
- <div class="card checklist">
-  <label><input type="checkbox">Book Matheran hotel (23–25 Nov)</label>
-  <label><input type="checkbox">Confirm Tapola host / stay (25–27 Nov)</label>
-  <label><input type="checkbox">Share driver roster and route with everyone</label>
-  <label><input type="checkbox">Check vehicle service, tyres, documents and FASTag</label>
-  <label><input type="checkbox">Download offline maps; carry cash for local transfers</label>
-  <label><input type="checkbox">Check weather and local boating status closer to travel</label>
-  <label><input type="checkbox">Agree on per-person contribution / expense split</label>
- </div>
- <footer>Planning draft · Dates and estimates are indicative · Confirm bookings, road conditions and activity availability before travel.</footer>
+<div class="actions"><button onclick="window.print()">Print / Save as PDF</button><button class="secondary" onclick="copyPlan()">Copy itinerary summary</button></div>
+<section class="grid">
+<div class="card"><div class="small">TRIP DATES</div><div class="metric">23–27 Nov</div><div>Monday–Friday · 2026</div></div>
+<div class="card"><div class="small">STAY SPLIT</div><div class="metric">2 + 2 nights</div><div>Matheran (23–25) · Tapola (25–27)</div></div>
+<div class="card"><div class="small">TRAVEL STYLE</div><div class="metric">Road trip</div><div>Own car / shared driving · scenic stops</div></div>
+<div class="card"><div class="small">STAY PLAN</div><div class="metric">Book Matheran</div><div>Tapola stay via friend (confirm dates & facilities)</div></div>
+</section>
+<h2>Matheran sightseeing map & stay base</h2>
+<div class="card"><h3>Recommended base: Market / Railway Station vicinity</h3><p>For a two-night stay, prioritise accommodation around <b>MG Road, Kasturba Road and the Railway Station / Market area</b>. This central base is convenient for restaurants, shopping, starting sightseeing walks and handling luggage after arriving from Dasturi Naka.</p><p class="small">Map is centred on Matheran town. Navigation pins and routes may vary; use the individual landmark links below to check actual walking trails before setting out.</p><iframe class="map-frame" loading="lazy" title="Matheran Market map" src="https://www.google.com/maps?q=Matheran%20Market%2C%20Maharashtra&output=embed"></iframe><p><a href="https://www.google.com/maps/search/?api=1&query=Matheran+Market+Railway+Station" target="_blank" rel="noopener">Open Matheran Market / Railway Station in Google Maps ↗</a></p></div>
+<h3 style="margin-top:20px">Approximate walking distances from Market / Station</h3>
+<div class="card" style="padding:0;overflow:auto"><table><thead><tr><th>Sightseeing spot</th><th>Approx. distance</th><th>Map</th></tr></thead><tbody>
+<tr><td>Charlotte Lake + Pisarnath Temple</td><td>~1.5–2 km</td><td><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Charlotte+Lake+Pisarnath+Temple+Matheran">View ↗</a></td></tr>
+<tr><td>Echo Point</td><td>~1.5–2 km</td><td><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Echo+Point+Matheran">View ↗</a></td></tr>
+<tr><td>Louisa Point</td><td>~2.5–3 km</td><td><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Louisa+Point+Matheran">View ↗</a></td></tr>
+<tr><td>Alexander Point</td><td>~1–2 km</td><td><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Alexander+Point+Matheran">View ↗</a></td></tr>
+<tr><td>One Tree Hill Point</td><td>~3 km</td><td><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=One+Tree+Hill+Point+Matheran">View ↗</a></td></tr>
+<tr><td>Panorama Point</td><td>~4.7–6 km</td><td><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Panorama+Point+Matheran">View ↗</a></td></tr>
+<tr><td>Porcupine / Sunset Point</td><td>~2 km (route dependent)</td><td><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Porcupine+Point+Sunset+Point+Matheran">View ↗</a></td></tr>
+</tbody></table></div>
+<div class="note"><b>Suggested sightseeing grouping:</b> Charlotte Lake + Pisarnath Temple, Echo Point and Louisa Point can be grouped into one circuit. Add Alexander Point depending on your walking pace. Treat Panorama Point as a separate early-morning sunrise excursion because it is farther from the central base.</div>
+<div class="grid"><div class="card"><h3>Hotels to shortlist</h3><ul><li><b>Hotel Panorama</b> — near the station / market area; confirm current pool access.</li><li><b>Gujarat Bhavan Hotel</b> — central option; confirm pool and slide access and operating status.</li><li><b>Regal Hotel</b> — central option with a large pool; reconfirm facilities.</li><li><b>Divadkar Hotel</b> — budget-oriented central option; no pool expected.</li></ul><p class="small">These are options to investigate, not confirmed availability or endorsements. Check current rates, recent reviews, exact location, pool operation and cancellation terms directly before booking.</p></div>
+<div class="card"><h3>Stay-selection tips</h3><ul><li>Choose central town access over a secluded viewpoint-side property.</li><li>Ask how luggage is transferred from Dasturi Naka and whether porter charges apply.</li><li>Check walking distance to Market / Railway Station, not just the hotel’s “Matheran” label.</li><li>Confirm whether the hotel can arrange horse or hand-pulled rickshaw transfers if needed.</li></ul></div></div>
+<h2>Day-by-day itinerary</h2>
+<div class="day"><div class="date"><span>Mon</span>23 Nov</div><div class="daybody"><h3>Goa → Matheran | Check-in</h3><ul><li>Early departure from Goa; plan a full road-travel day with meal/fuel breaks.</li><li>Reach Dasturi Naka / parking area, park the car and transfer into Matheran (vehicles are not allowed in the town).</li><li>Check in, freshen up and take an easy walk around the market / nearby viewpoints if time permits.</li></ul><div class="note"><b>Stay night 1:</b> Matheran hotel. Prefer a central property with a swimming pool if budget and availability work.</div></div></div>
+<div class="day"><div class="date"><span>Tue</span>24 Nov</div><div class="daybody"><h3>Matheran | Full sightseeing day</h3><ul><li><b>Morning:</b> Panorama Point for sunrise (optional; early start), then breakfast.</li><li><b>Day:</b> Charlotte Lake, Pisarnath Temple, Echo Point and Louisa Point; add Alexander Point depending on walking pace.</li><li><b>Evening:</b> market stroll / sunset at Porcupine Point if timing and weather suit.</li></ul><div class="note">Matheran is largely explored on foot. Wear comfortable shoes, carry water and keep buffer time between viewpoints. Panorama Point is a longer outing from the central market area.</div><b>Stay night 2:</b> Matheran.</div></div>
+<div class="day"><div class="date"><span>Wed</span>25 Nov</div><div class="daybody"><h3>Matheran → Tapola | Transfer day</h3><ul><li>Breakfast, checkout and leave Matheran in the morning.</li><li>Drive towards Tapola via the Mahabaleshwar side; allow roughly 5–6+ hours on the road, plus breaks and traffic.</li><li>Check in at the friend-arranged stay, relax and enjoy the backwater views around sunset if arrival allows.</li></ul><div class="note"><b>Stay night 1:</b> Tapola — confirm address, check-in time, bedding, hot water, parking and whether meals are available.</div></div></div>
+<div class="day"><div class="date"><span>Thu</span>26 Nov</div><div class="daybody"><h3>Tapola | Backwaters & relaxed day</h3><ul><li>Enjoy a slow breakfast and the Shivsagar / Koyna backwater scenery.</li><li>Choose a local boat ride or kayaking only with an authorised operator and suitable weather/safety conditions.</li><li>Relax by the lake, take photos and enjoy sunset; optional BBQ/bonfire only if the host permits.</li></ul><b>Stay night 2:</b> Tapola.</div></div>
+<div class="day"><div class="date"><span>Fri</span>27 Nov</div><div class="daybody"><h3>Tapola → Goa | Return</h3><ul><li>Breakfast, checkout and start the return drive early.</li><li>Keep breaks for meals, fuel and driver rest; arrival in Goa will depend on traffic and stops.</li></ul><div class="note">Avoid fixing a late-night commitment in Goa on the return date.</div></div></div>
+<h2>Stay planning & booking checklist</h2><div class="grid"><div class="card"><h3>Matheran · 23 & 24 Nov</h3><p>2 nights · shortlist a central budget hotel with pool (pool availability/maintenance should be reconfirmed directly).</p><div class="checklist"><label><input type="checkbox">Compare total price for 2 nights + taxes</label><label><input type="checkbox">Confirm room capacity / extra mattress</label><label><input type="checkbox">Confirm pool access, timings & maintenance</label><label><input type="checkbox">Confirm parking at Dasturi Naka and luggage transfer</label><label><input type="checkbox">Check walking distance to Market / Railway Station</label><label><input type="checkbox">Check cancellation policy</label></div></div>
+<div class="card"><h3>Tapola · 25 & 26 Nov</h3><p>2 nights · friend’s stay (free/low-cost, subject to confirmation).</p><div class="checklist"><label><input type="checkbox">Confirm availability for both nights</label><label><input type="checkbox">Get exact location / route pin</label><label><input type="checkbox">Confirm beds, bathrooms & hot water</label><label><input type="checkbox">Confirm meals / kitchen access</label><label><input type="checkbox">Confirm car parking & house rules</label></div></div></div>
+<h2>Budget tracker (indicative)</h2><p class="small">Illustrative group estimate for 3 people; actual spend depends on car mileage, rooms, food and activities. Tapola accommodation assumed free/low-cost.</p><div class="card" style="padding:0;overflow:auto"><table><thead><tr><th>Expense</th><th>Group estimate</th><th>Per person (3)</th></tr></thead><tbody><tr><td>Fuel + tolls (round trip)</td><td>₹10,000–14,000</td><td>₹3,300–4,700</td></tr><tr><td>Matheran stay (2 nights)</td><td>₹6,000–12,000</td><td>₹2,000–4,000</td></tr><tr><td>Food (5 days)</td><td>₹9,000–15,000</td><td>₹3,000–5,000</td></tr><tr><td>Parking, local transfers & activities</td><td>₹4,000–7,000</td><td>₹1,300–2,300</td></tr><tr><td>Tapola stay</td><td>Friend’s arrangement</td><td>Confirm</td></tr><tr><th>Estimated total</th><th>₹29,000–48,000</th><th>₹9,700–16,000</th></tr></tbody></table></div><div class="note">Budget excludes shopping, major detours, premium activities and any Tapola accommodation contribution. Recalculate once room and vehicle details are final.</div>
+<h2>Before leaving</h2><div class="card checklist"><label><input type="checkbox">Book Matheran hotel (23–25 Nov), preferably near Market / Railway Station</label><label><input type="checkbox">Confirm Tapola host / stay (25–27 Nov)</label><label><input type="checkbox">Share driver roster and route with everyone</label><label><input type="checkbox">Check vehicle service, tyres, documents and FASTag</label><label><input type="checkbox">Download offline maps; carry cash for local transfers</label><label><input type="checkbox">Check weather and local boating status closer to travel</label><label><input type="checkbox">Agree on per-person contribution / expense split</label></div>
+<footer>Planning draft · Dates and estimates are indicative · Confirm bookings, road conditions, walking routes and activity availability before travel.</footer>
 </main>
 <script>
-function copyPlan(){
- const t=`Matheran + Tapola Road Trip | 23–27 Nov 2026
+function copyPlan(){const t=`Matheran + Tapola Road Trip | 23–27 Nov 2026
 23 Nov: Goa → Matheran; check in (night 1)
-24 Nov: Matheran sightseeing (Charlotte Lake, Echo/Louisa points etc.) (night 2)
+24 Nov: Matheran sightseeing: optional Panorama Point sunrise; Charlotte Lake/Pisarnath Temple, Echo Point, Louisa Point, Alexander Point and Porcupine/Sunset Point as time permits (night 2)
 25 Nov: Matheran → Tapola via Mahabaleshwar; check in (night 1)
 26 Nov: Tapola backwaters, optional authorised boat/kayak, sunset (night 2)
 27 Nov: Tapola → Goa
+Matheran stay base: Market / Railway Station vicinity, around MG Road / Kasturba Road. Hotel shortlist: Hotel Panorama, Gujarat Bhavan, Regal Hotel and Divadkar Hotel; reconfirm facilities, rates and availability.
+Approximate distances from central Market/Station: Charlotte Lake/Pisarnath 1.5–2 km; Echo Point 1.5–2 km; Louisa Point 2.5–3 km; Alexander Point 1–2 km; One Tree Hill 3 km; Panorama Point 4.7–6 km; Porcupine/Sunset Point about 2 km (route dependent).
 Stay: Matheran hotel 23–25 Nov; Tapola friend stay 25–27 Nov (confirm).
-Budget estimate for 3: ₹29k–48k group / ₹9.7k–16k each, excluding shopping and depending on final bookings.`;
- navigator.clipboard.writeText(t).then(()=>alert('Itinerary summary copied!')).catch(()=>alert(t));
-}
+Budget estimate for 3: ₹29k–48k group / ₹9.7k–16k each, excluding shopping and depending on final bookings.`;navigator.clipboard.writeText(t).then(()=>alert('Itinerary summary copied!')).catch(()=>alert(t));}
 </script>
 </body></html>
